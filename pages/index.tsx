@@ -1,62 +1,56 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { GetStaticProps, GetStaticPropsContext } from 'next'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Informations } from '../axios'
+import { fetchInformation } from '../axios/api'
+import {
+  addAvatar,
+  addExperienceInformations,
+  addMyOffers,
+  addPhotos,
+  addSkillInformations,
+} from '../redux'
+import { addEducationInformations } from '../redux/educationInformationsSlice'
+import { RootState } from '../redux/store'
 
-interface Props {}
+interface Props {
+  data: Informations
+}
 
-const Home: React.FC<Props> = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+export const getStaticProps: GetStaticProps = async (context: GetStaticPropsContext) => {
+  const data = await fetchInformation()
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href='https://nextjs.org'>Next.js!</a>
-        </h1>
+  return {
+    props: {
+      data: data.data,
+    },
+  }
+}
 
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.js</code>
-        </p>
+const Home: React.FC<Props> = ({ data }) => {
+  console.log('data: ', data)
+  const dispatch = useDispatch()
+  const state = useSelector<any>((state: RootState) => state)
+  console.log('state: ', state)
 
-        <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+  const {
+    avatar,
+    educationInformations,
+    experienceInformations,
+    photos,
+    skillsInformation,
+    myOffers,
+  } = data
 
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples' className={styles.card}>
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Powered by <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+  useEffect(() => {
+    dispatch(addAvatar(avatar))
+    dispatch(addEducationInformations(educationInformations))
+    dispatch(addExperienceInformations(experienceInformations))
+    dispatch(addPhotos(photos))
+    dispatch(addSkillInformations(skillsInformation))
+    dispatch(addMyOffers(myOffers))
+  }, [])
+  return <div>hello</div>
 }
 
 export default Home
