@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPropsContext } from 'next'
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { Informations } from '../axios'
 import { fetchInformation } from '../axios/api'
 import {
@@ -11,7 +11,6 @@ import {
   addSkillInformations,
 } from '../redux'
 import { addEducationInformations } from '../redux/educationInformationsSlice'
-import { RootState } from '../redux/store'
 
 interface Props {
   data: Informations
@@ -22,16 +21,13 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
   return {
     props: {
-      data: data.data,
+      data: data.data[0],
     },
   }
 }
 
 const Home: React.FC<Props> = ({ data }) => {
-  console.log('data: ', data)
   const dispatch = useDispatch()
-  const state = useSelector<any>((state: RootState) => state)
-  console.log('state: ', state)
 
   const {
     avatar,
