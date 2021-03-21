@@ -46,7 +46,7 @@ const Home: React.FC<Props> = ({ data }) => {
     dispatch(addSkillInformations(skillsInformation))
     dispatch(addMyOffers(myOffers))
   }, [])
-  return <div>hello</div>
+  return <div> </div>
 }
 
 export default Home
