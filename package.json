@@ -27,6 +27,11 @@
     "react-responsive": "^8.2.0",
     "yup": "^0.32.9"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "devDependencies": {
     "@next/eslint-plugin-next": "^10.0.9",
     "@tailwindcss/jit": "^0.1.5",
