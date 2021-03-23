@@ -1,7 +1,8 @@
 import type { AppProps } from 'next/app'
+import React from 'react'
 import { AppProvider } from '../AppProvider'
+import { Header } from '../components'
 import '../styles/globals.css'
-import Header from './components/Header/Index'
 
 interface Props {}
 

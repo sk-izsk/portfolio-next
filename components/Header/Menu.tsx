@@ -3,13 +3,14 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import styles from './Header.module.css'
 
 interface Props {}
 
 const Menu: React.FC<Props> = () => {
   const [open, setOpen] = useState<boolean>(false)
   return (
-    <nav>
+    <nav className='flex justify-center'>
       <button
         onClick={() => setOpen(!open)}
         className='w-auto bg-gray-900 rounded-full p-2 hover:bg-gray-700 transition-colors duration-100 focus-within:outline-none z-50 relative md:hidden'
@@ -29,11 +30,14 @@ const Menu: React.FC<Props> = () => {
       >
         <section
           onClick={() => setOpen(false)}
-          className={'flex flex-col  md:flex-row md:items-center'}
+          className={`flex flex-col ${styles.menu} md:flex-row md:items-center`}
         >
           <Link href='/'>Home</Link>
           <Link href='/about'>About</Link>
+          <Link href='/education'>Education</Link>
+          <Link href='/skill'>Skill</Link>
           <Link href='/work'>Work</Link>
+          <Link href='/photos'>Photos</Link>
           <Link href='/contact'>Contact</Link>
         </section>
       </div>
@@ -41,4 +45,4 @@ const Menu: React.FC<Props> = () => {
   )
 }
 
-export default Menu
+export { Menu }

@@ -5,12 +5,12 @@ import { Informations } from '../axios'
 import { fetchInformation } from '../axios/api'
 import {
   addAvatar,
+  addEducationInformations,
   addExperienceInformations,
   addMyOffers,
   addPhotos,
   addSkillInformations,
 } from '../redux'
-import { addEducationInformations } from '../redux/educationInformationsSlice'
 
 interface Props {
   data: Informations
