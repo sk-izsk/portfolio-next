@@ -1,0 +1,10 @@
+.dashboard {
+  background: rgb(240, 249, 255) url('../../Assets/dashboard.svg') bottom left no-repeat;
+  min-height: 650px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    background-size: 200%;
+  }
+}

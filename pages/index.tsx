@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { Informations } from '../axios'
 import { fetchInformation } from '../axios/api'
+import { DashBoard } from '../components'
 import {
   addAvatar,
   addEducationInformations,
@@ -46,7 +47,11 @@ const Home: React.FC<Props> = ({ data }) => {
     dispatch(addSkillInformations(skillsInformation))
     dispatch(addMyOffers(myOffers))
   }, [])
-  return <div> </div>
+  return (
+    <div>
+      <DashBoard />
+    </div>
+  )
 }
 
 export default Home

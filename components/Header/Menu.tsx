@@ -1,7 +1,9 @@
 import cls from 'classnames'
+import { useTheme } from 'next-themes'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
+import { FiMoon, FiSun } from 'react-icons/fi'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import styles from './Header.module.css'
 
@@ -9,6 +11,24 @@ interface Props {}
 
 const Menu: React.FC<Props> = () => {
   const [open, setOpen] = useState<boolean>(false)
+
+  const [isMounted, setIsMounted] = useState<boolean>(false)
+  const { theme, setTheme } = useTheme()
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  const switchTheme = () => {
+    if (isMounted) {
+      setTheme(theme === 'light' ? 'dark' : 'light')
+    }
+  }
+
+  const handleTheme = (e) => {
+    e.preventDefault()
+    switchTheme()
+  }
+
   return (
     <nav className='flex justify-center'>
       <button
@@ -39,6 +59,13 @@ const Menu: React.FC<Props> = () => {
           <Link href='/work'>Work</Link>
           <Link href='/photos'>Photos</Link>
           <Link href='/contact'>Contact</Link>
+          <a className={styles.themeLink} onClick={handleTheme}>
+            {theme === 'light' ? (
+              <FiMoon size={20} color='#000000' />
+            ) : (
+              <FiSun size={20} color='#ffffff' />
+            )}
+          </a>
         </section>
       </div>
     </nav>
