@@ -43,7 +43,7 @@ const PrivacyPolicy: React.FC<Props> = () => {
         If you have any questions or concerns about this,
         <br />
         please contact me at
-        <a href='mailto:sk.zeeshan1992@gmail.com'>sk.zeeshan1992@gmail.com</a>
+        <a href='mailto:sk.zeeshan1992@gmail.com'> sk.zeeshan1992@gmail.com</a>
       </p>
     </article>
   )
