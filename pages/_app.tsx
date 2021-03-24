@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import React from 'react'
 import { AppProvider } from '../AppProvider'
-import { Header } from '../components'
+import { Footer, Header } from '../components'
 import '../styles/globals.css'
 
 interface Props {}
@@ -11,6 +11,7 @@ const MyApp: React.FC<Props> = ({ Component, pageProps }: AppProps) => {
     <AppProvider>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </AppProvider>
   )
 }
