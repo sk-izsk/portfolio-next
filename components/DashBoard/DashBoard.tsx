@@ -1,14 +1,10 @@
 import cls from 'classnames'
-import { useRouter } from 'next/dist/client/router'
 import Link from 'next/link'
 import { dashBoardLinkData, RouteLink } from '../../utils'
 import styles from './DashBoard.module.css'
 interface Props {}
 
 const DashBoard: React.FC<Props> = () => {
-  const router = useRouter()
-
-  const handleContact = () => router.push('/contact')
   return (
     <section
       className={cls(
@@ -29,14 +25,6 @@ const DashBoard: React.FC<Props> = () => {
             and smooth user interfaces with a fast and scalable backend.`}
           </p>
         </article>
-
-        <button
-          onClick={handleContact}
-          className='flex-none m-2 bg-gray-900 hover:bg-gray-700 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl ring-2 ring-offset-2 ring-offset-white ring-gray-900 focus:outline-none transition-colors duration-200'
-        >
-          <span className='lg:hidden'>Contact me</span>
-          <span className='hidden lg:inline'>{"Let's work together"}</span>
-        </button>
         {dashBoardLinkData.map((data: RouteLink, index: number) => (
           <button
             key={index}

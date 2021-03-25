@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-export default function Custom404() {
+interface Props {}
+
+const Custom404: React.FC<Props> = () => {
   const router = useRouter()
 
   useEffect(() => {
@@ -10,3 +12,5 @@ export default function Custom404() {
 
   return null
 }
+
+export default Custom404

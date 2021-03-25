@@ -1,3 +1,5 @@
+export * from './About'
 export * from './DashBoard'
 export * from './Footer'
 export * from './Header'
+export * from './Layout'
