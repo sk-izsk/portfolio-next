@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../components'
+import { H1, H2, Layout } from '../components'
 
 interface Props {}
 
@@ -8,8 +8,8 @@ const PrivacyPolicy: React.FC<Props> = () => {
     <Layout>
       <article className='prose prose-lg container prose-purple pt-16 section-margin-top'>
         <header className='text-center mb-20 md:mb-32'>
-          <h1 className='dark:text-white'>Privacy Policy</h1>
-          <p className='dark:text-white'>How I handle your data</p>
+          <H1>Privacy Policy</H1>
+          <p className='dark:text-white'>How do I handle your data ?</p>
         </header>
 
         <p className='dark:text-white'>
@@ -22,7 +22,7 @@ const PrivacyPolicy: React.FC<Props> = () => {
           Basically, it’s just a free piece of content, no strings attached.
         </p>
 
-        <h2 className='dark:text-white'>Secure Data Transfer</h2>
+        <H2>Secure Data Transfer</H2>
         <p className='dark:text-white'>
           This website transmits itself using HTTPS, encrypting all data between the browser and the
           server. Your network provider may still be able to see that you are loading files from
@@ -31,7 +31,7 @@ const PrivacyPolicy: React.FC<Props> = () => {
           site.
         </p>
 
-        <h2 className='dark:text-white'>Responsible Data Controller</h2>
+        <H2>Responsible Data Controller</H2>
         <p className='dark:text-white'>
           <strong className='dark:text-white'>Zeeshan</strong>
           <br />
@@ -42,7 +42,7 @@ const PrivacyPolicy: React.FC<Props> = () => {
           Canada
         </p>
 
-        <p className='dark:text-white'>
+        <p className='dark:text-white pb-5'>
           If you have any questions or concerns about this,
           <br />
           please contact me at
