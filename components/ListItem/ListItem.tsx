@@ -27,9 +27,9 @@ const ListItem: React.FC<Props> = ({
         <Icon size={35} color='#7C3AED' />
       </div>
       <div className='px-2 text-purple-600 border-l-2 border-purple-600'>
-        <H2 className='text-purple-600 dark:text-purple-600'>{nameOfOrganization}</H2>
-        <div className='text-md my-2'>{`${startYear} - ${endYear}`}</div>
-        <div className='inline-flex text-lg'>{details}</div>
+        <H2 className='text-purple-600 dark:text-white'>{nameOfOrganization}</H2>
+        <div className='text-md my-2 dark:text-white'>{`${startYear} - ${endYear}`}</div>
+        <div className='inline-flex text-lg dark:text-white'>{details}</div>
         <div className='flex flex-row'>
           {link && (
             <Button>

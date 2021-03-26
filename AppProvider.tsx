@@ -6,7 +6,7 @@ interface Props {}
 
 const AppProvider: React.FC<Props> = ({ children }) => {
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider defaultTheme='dark' attribute='class'>
       <Provider store={store}>{children}</Provider>
     </ThemeProvider>
   )

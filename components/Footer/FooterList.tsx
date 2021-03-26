@@ -15,7 +15,7 @@ const FooterList: React.FC<Props> = ({ footerData }) => {
       <ul className='space-y-4'>
         {routeLinks.map((routeLink: RouteLink, index: number) => (
           <li
-            className='hover:text-gray-900 dark:text-white transition-colors duration-200 tracking-tight font-medium'
+            className='hover:text-purple-500 dark:hover:text-purple-500 dark:text-white transition-colors duration-200 tracking-tight font-medium'
             key={index}
           >
             {outerLink ? (

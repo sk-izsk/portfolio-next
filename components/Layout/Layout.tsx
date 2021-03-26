@@ -16,7 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
   })
 
   if (avatar.avatarOne) {
-    return <div className='dark:bg-gray-800'>{children}</div>
+    return <div className='dark:bg-gray-900'>{children}</div>
   }
   return null
 }

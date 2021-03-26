@@ -9,7 +9,7 @@ const DashBoard: React.FC<Props> = () => {
   return (
     <section
       className={cls(
-        'h-screen w-full flex items-center relative overflow-hidden dark:bg-gray-800',
+        'h-screen w-full flex items-center relative overflow-hidden dark:bg-gray-900',
         styles.dashboard,
       )}
     >
