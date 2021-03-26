@@ -1,4 +1,5 @@
 export * from './About'
+export * from './Button'
 export * from './DashBoard'
 export * from './Footer'
 export * from './Header'

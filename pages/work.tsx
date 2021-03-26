@@ -1,4 +1,4 @@
-import { FaUserGraduate } from 'react-icons/fa'
+import { AiFillCode } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 import { Information } from '../axios'
 import { Layout, ListItem } from '../components'
@@ -8,13 +8,13 @@ interface Props {}
 
 const Education: React.FC<Props> = () => {
   const education: Information[] = useSelector<RootState, Information[]>(
-    (state: RootState) => state.educationInformations,
+    (state: RootState) => state.experienceInformations,
   )
   return (
     <Layout>
       <div className='container section-margin-top mb-5'>
         {education.map((information: Information, index: number) => (
-          <ListItem key={index} {...information} Icon={FaUserGraduate} />
+          <ListItem key={index} {...information} Icon={AiFillCode} />
         ))}
       </div>
     </Layout>

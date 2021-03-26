@@ -44,7 +44,7 @@ const Menu: React.FC<Props> = () => {
 
       <div
         className={cls(
-          'fixed bg-black top-0 left-0 w-full h-full flex justify-center items-center md:relative md:flex md:bg-transparent z-40',
+          'fixed bg-black bg-purple-600 top-0 left-0 w-full h-full flex justify-center items-center md:relative md:flex md:bg-transparent z-40',
           { hidden: !open },
         )}
       >

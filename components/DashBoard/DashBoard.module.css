@@ -1,5 +1,5 @@
 .dashboard {
-  background: rgb(240, 249, 255) url('../../Assets/dashboard.svg') bottom left no-repeat;
+  background: rgba(239, 246, 255) url('../../Assets/dashboard.svg') bottom left no-repeat;
   min-height: 650px;
 }
 
