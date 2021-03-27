@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import styles from './Header.module.css'
 interface Props {
   url: string
 }
 
 const Name: React.FC<Props> = ({ url }) => {
   return (
-    <div className={styles.brand}>
+    <div className='cursor-pointer'>
       <Link aria-label='Go to homepage' href='/'>
         <div className='flex items-center justify-around'>
           <img className='rounded-full mr-2' src={url} width={50} height={50} />

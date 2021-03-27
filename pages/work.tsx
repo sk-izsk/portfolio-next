@@ -1,7 +1,7 @@
-import { AiFillCode } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 import { Information } from '../axios'
-import { Layout, ListItem } from '../components'
+import { Layout } from '../components'
+import { ProjectCard } from '../components/ProjectCard'
 import { RootState } from '../redux/store'
 
 interface Props {}
@@ -13,9 +13,11 @@ const Education: React.FC<Props> = () => {
   return (
     <Layout>
       <div className='container section-margin-top mb-5'>
-        {education.map((information: Information, index: number) => (
-          <ListItem key={index} {...information} Icon={AiFillCode} />
-        ))}
+        <section className='mt-28 grid grid-cols-1 justify-items-center items-start lg:justify-items-start gap-y-10 md:gap-y-14 md:gap-x-10 md:grid-cols-2 lg:grid-cols-3'>
+          {education.map((information: Information, index: number) => (
+            <ProjectCard key={index} information={information} />
+          ))}
+        </section>
       </div>
     </Layout>
   )

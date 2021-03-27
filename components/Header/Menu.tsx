@@ -59,7 +59,7 @@ const Menu: React.FC<Props> = () => {
           <Link href='/work'>Work</Link>
           <Link href='/photos'>Photos</Link>
           <Link href='/contact'>Contact</Link>
-          <a className={styles.themeLink} onClick={handleTheme}>
+          <a className='cursor-pointer' onClick={handleTheme}>
             {theme === 'light' ? (
               <FiMoon size={20} color='#000000' />
             ) : (

@@ -3107,6 +3107,11 @@ react-is@16.13.1, react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-parallax-tilt@^1.4.95:
+  version "1.4.95"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.95.tgz#b5fe6215e4f48aa06c8790559311cc520362176f"
+  integrity sha512-LlzhqiP1UhSnGoPmh5WXj8us0QCzhxRvdOzDE29pJ8oFIuJ6Ogk7ibJNgO0iZzIugRDESAel1gxJUzIFR5y05Q==
+
 react-redux@^7.2.2:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.3.tgz#4c084618600bb199012687da9e42123cca3f0be9"
