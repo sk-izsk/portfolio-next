@@ -14,7 +14,7 @@ const Education: React.FC<Props> = () => {
       <div className='container section-margin-top mb-5'>
         <section className='mt-28 grid grid-cols-1 justify-items-center items-start lg:justify-items-start gap-y-10 md:gap-y-14 md:gap-x-10 md:grid-cols-2 lg:grid-cols-3'>
           {education.map((information: Information, index: number) => (
-            <ProjectCard key={index} information={information} />
+            <ProjectCard key={index} {...information} />
           ))}
         </section>
       </div>

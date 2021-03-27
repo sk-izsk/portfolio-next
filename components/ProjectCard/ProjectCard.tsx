@@ -1,15 +1,26 @@
 import cls from 'classnames'
-import { Information } from '../../axios'
 import { LineClamp } from './LineClamp'
 import { Link } from './Link'
 
 interface Props {
   className?: string
-  information: Information
+  nameOfOrganization: string
+  startYear: string
+  endYear: string
+  details: string
+  link?: string
+  demoLink?: string
 }
 
-const ProjectCard: React.FC<Props> = ({ className, information }) => {
-  const { startYear, endYear, nameOfOrganization, link, demoLink, details } = information
+const ProjectCard: React.FC<Props> = ({
+  className,
+  startYear,
+  endYear,
+  nameOfOrganization,
+  link,
+  demoLink,
+  details,
+}) => {
   return (
     <article
       className={cls(
@@ -29,8 +40,8 @@ const ProjectCard: React.FC<Props> = ({ className, information }) => {
 
         <footer className='mt-8'>
           <section className='flex items-center space-x-2 '>
-            <Link href={link}>Link</Link>
-            <Link href={demoLink}>Demo Link</Link>
+            {link && <Link href={link}>Link</Link>}
+            {demoLink && <Link href={demoLink}>Demo Link</Link>}
           </section>
         </footer>
       </section>
