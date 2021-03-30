@@ -36,9 +36,9 @@ const Menu: React.FC<Props> = () => {
         className='w-auto bg-gray-900 rounded-full p-2 hover:bg-gray-700 transition-colors duration-100 focus-within:outline-none z-50 relative md:hidden'
       >
         {open ? (
-          <GiHamburgerMenu className="w-8 text-gray-900'" />
-        ) : (
           <AiOutlineClose className='w-8 text-white' />
+        ) : (
+          <GiHamburgerMenu className='w-8 text-white' />
         )}
       </button>
 
