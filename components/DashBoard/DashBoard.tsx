@@ -16,10 +16,10 @@ const DashBoard: React.FC<Props> = () => {
       <div className='container md:-mt-40'>
         <article className='flex flex-col'>
           <h1 className='text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight dark:text-white text-gray-900 mb-3 sm:mb-8'>
-            I'm a Full stack web developer
+            I'm a full stack web developer
           </h1>
           <h3 className='order-first sm:text-lg sm:leading-snug font-semibold tracking-wide uppercase text-purple-600 mb-3'>
-            <Link href='/about'>HELLO, MY NAME IS Zeeshan</Link>
+            <Link href='/about'>HELLO, MY NAME IS Zeeshan.</Link>
           </h3>
           <p className='max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-12 sm:mb-14 text-gray-500 dark:text-white'>
             I'm a professional full stack web developer. I love to develop websites and mobile apps
