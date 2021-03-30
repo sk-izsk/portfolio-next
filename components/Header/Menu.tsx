@@ -55,7 +55,7 @@ const Menu: React.FC<Props> = () => {
           <Link href='/'>Home</Link>
           <Link href='/about'>About</Link>
           <Link href='/education'>Education</Link>
-          <Link href='/skill'>Skill</Link>
+          <Link href='/skills'>Skills</Link>
           <Link href='/work'>Work</Link>
           <Link href='/photos'>Photos</Link>
           <Link href='/contact'>Contact</Link>

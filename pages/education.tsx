@@ -12,11 +12,9 @@ const Education: React.FC<Props> = () => {
   )
   return (
     <Layout>
-      <div className='container section-margin-top mb-5'>
-        {education.map((information: Information, index: number) => (
-          <ListItem key={index} {...information} Icon={FaUserGraduate} />
-        ))}
-      </div>
+      {education.map((information: Information, index: number) => (
+        <ListItem key={index} {...information} Icon={FaUserGraduate} />
+      ))}
     </Layout>
   )
 }
