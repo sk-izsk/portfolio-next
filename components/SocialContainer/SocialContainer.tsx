@@ -1,5 +1,11 @@
-import { footerData, FooterData, GetSocialIcon, RouteLink } from '../../utils'
-import { SocialMediaName } from '../../utils/GetSocialIcon'
+import {
+  footerData,
+  FooterData,
+  GetSocialIcon,
+  RouteLink,
+  SocialIcon,
+  SocialMediaName,
+} from '../../utils'
 import { H2, P } from '../Layout'
 interface Props {}
 
@@ -10,7 +16,7 @@ const SocialContainer: React.FC<Props> = () => {
     <div className='text-center flex-2 m-2 rounded-md border-2 p-4 shadow-inner dark:shadow-none dark:border-purple-600'>
       <H2>Social Links</H2>
       {socialLinks.map((socialLink: RouteLink, index: number) => {
-        const { Icon, color } = GetSocialIcon(socialLink.name as SocialMediaName)
+        const { Icon, color }: SocialIcon = GetSocialIcon(socialLink.name as SocialMediaName)
         return (
           <div
             className='flex items-center cursor-pointer'

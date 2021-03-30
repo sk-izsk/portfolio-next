@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { Information } from '../axios'
 import { Layout, ProjectCard } from '../components'
-import { RootState } from '../redux/store'
+import { RootState } from '../redux'
 
 interface Props {}
 

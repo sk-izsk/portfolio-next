@@ -1,8 +1,7 @@
 import { GetStaticProps, GetStaticPropsContext } from 'next'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { Informations } from '../axios'
-import { fetchInformation } from '../axios/api'
+import { fetchInformation, Informations } from '../axios'
 import { DashBoard } from '../components'
 import {
   addAvatar,
