@@ -1,9 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { MyOffers } from '../axios/api-types'
 
-type InitialState = MyOffers | {}
+type InitialState = MyOffers
 
-const initialState: InitialState = {}
+const initialState: InitialState = {
+  frontEnd: { name: '', offerings: [] },
+  backEnd: { name: '', offerings: [] },
+}
 
 const myOffersSlice = createSlice({
   name: 'myOffers',

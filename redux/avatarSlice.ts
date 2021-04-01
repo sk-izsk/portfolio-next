@@ -1,9 +1,12 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Avatar } from '../axios/api-types'
 
-type InitialState = Avatar | {}
+type InitialState = Avatar
 
-const initialState: InitialState = {}
+const initialState: InitialState = {
+  avatarOne: '',
+  avatarTwo: '',
+}
 
 const avatarSlice = createSlice({
   name: 'avatar',
