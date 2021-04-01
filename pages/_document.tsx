@@ -22,6 +22,7 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap'
             rel='stylesheet'
           />
+          <link rel='shortcut icon' href='/favicon.png' />
         </Head>
         <body className='bg-blue-50 text-black dark:bg-gray-900 dark:text-white'>
           <Main />
