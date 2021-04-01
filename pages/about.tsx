@@ -10,8 +10,8 @@ interface Props {}
 
 const About: React.FC<Props> = () => {
   // const avatar: Avatar = useSelector<RootState, Avatar>((state: RootState) => state.avatar)
-  const avatar: Avatar = useSelector<RootState, Avatar>((state: RootState) => state.avatar)
-  const myOffers: MyOffers = useSelector<RootState, MyOffers>((state: RootState) => state.myOffers)
+  const avatar: Avatar = useSelector<RootState, any>((state: RootState) => state.avatar)
+  const myOffers: MyOffers = useSelector<RootState, any>((state: RootState) => state.myOffers)
 
   return (
     <Layout>

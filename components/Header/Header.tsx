@@ -7,7 +7,7 @@ import { Name } from './Name'
 interface Props {}
 
 const Header: React.FC<Props> = () => {
-  const avatarUrl: Avatar = useSelector<RootState, Avatar>((state: RootState) => state.avatar)
+  const avatarUrl: Avatar = useSelector<RootState, any>((state: RootState) => state.avatar)
   return (
     <header className='pb-1 dark:bg-gray-900 bg-white z-30 fixed w-full top-0 left-0'>
       {avatarUrl && (
