@@ -19,4 +19,22 @@ const fetchInformation = async () => {
   }
 }
 
-export { fetchInformation }
+export interface Payload {
+  name: string
+  email: string
+  subject: string
+  message: string
+  environment?: string
+}
+
+const sendEmail = async (data: Payload): Promise<AxiosResponse<any>> => {
+  const response: AxiosResponse<any> = await axios({
+    method: 'POST',
+    url: BASE_URL,
+    data,
+  })
+
+  return response
+}
+
+export { fetchInformation, sendEmail }
