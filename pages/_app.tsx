@@ -24,9 +24,7 @@ interface Props {}
 const MyApp: React.FC<Props> = ({ Component, pageProps }: AppProps) => {
   const router: NextRouter = useRouter()
 
-  const handleRouteChange = (url: URL) => {
-    if (isProduction) gtag.pageview(url)
-  }
+  const handleRouteChange = (url: URL) => isProduction && gtag.pageview(url)
 
   useEffect(() => {
     router.events.on('routeChangeComplete', handleRouteChange)

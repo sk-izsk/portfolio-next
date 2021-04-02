@@ -16,7 +16,6 @@ class MyDocument extends Document {
   }
 
   render() {
-    console.log('GA tracking', GA_TRACKING_ID)
     return (
       <Html>
         <Head>
