@@ -20,6 +20,7 @@ const About: React.FC<Props> = () => {
           className={cls('shadow-md', styles.photo)}
           width={400}
           src={avatar.avatarOne}
+          alt='zeeshan'
         />
       </div>
       <article className='mb-10 mt-16 prose prose-lg prose-purple'>

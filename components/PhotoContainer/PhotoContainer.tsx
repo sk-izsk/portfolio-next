@@ -59,6 +59,7 @@ const PhotoContainer: React.FC<Props> = ({ url, className }) => {
           style={{
             transform: hovering ? 'translateZ(20px)' : 'translateZ(0)',
           }}
+          alt='zeeshan'
           src={url}
           onClick={() => window.open('https://www.instagram.com/sk_izsk/', '_blank')}
         />

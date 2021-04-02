@@ -51,6 +51,7 @@ const Home: React.FC<Props> = ({ data }) => {
     <div>
       <Head>
         <title>Zeeshan Portfolio | Home</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <DashBoard />
     </div>
