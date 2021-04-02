@@ -13,7 +13,7 @@ const About: React.FC<Props> = () => {
   const myOffers: MyOffers = useSelector<RootState, MyOffers>((state: RootState) => state.myOffers)
 
   return (
-    <Layout>
+    <Layout headTitle='About'>
       <div className='flex justify-center'>
         <img
           placeholder='blurred'

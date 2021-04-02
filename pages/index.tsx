@@ -1,4 +1,5 @@
 import { GetStaticProps, GetStaticPropsContext } from 'next'
+import Head from 'next/head'
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { fetchInformation, Informations } from '../axios'
@@ -48,6 +49,9 @@ const Home: React.FC<Props> = ({ data }) => {
   }, [])
   return (
     <div>
+      <Head>
+        <title>Zeeshan Portfolio | Home</title>
+      </Head>
       <DashBoard />
     </div>
   )

@@ -14,7 +14,7 @@ const Skills: React.FC<Props> = () => {
   const backEnd: SkillsInformation[] = getSpecificSkills('BACKEND', skills)
   const misc: SkillsInformation[] = getSpecificSkills('MISC', skills)
   return (
-    <Layout>
+    <Layout headTitle='Skills'>
       <div className='flex flex-wrap'>
         <SkillContainer title='Frontend' skills={frontEnd} />
         <SkillContainer title='Backend' skills={backEnd} />

@@ -4,7 +4,7 @@ interface Props {}
 
 const Contact: React.FC<Props> = () => {
   return (
-    <Layout>
+    <Layout headTitle='Contact'>
       <div className='flex flex-wrap'>
         <ContactForm />
         <SocialContainer />

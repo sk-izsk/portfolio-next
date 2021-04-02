@@ -11,7 +11,7 @@ const Education: React.FC<Props> = () => {
     (state: RootState) => state.educationInformations,
   )
   return (
-    <Layout>
+    <Layout headTitle='Education'>
       {education.map((information: Information, index: number) => (
         <ListItem key={index} {...information} Icon={FaUserGraduate} />
       ))}
