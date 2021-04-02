@@ -5,7 +5,7 @@ interface Props {}
 
 const PrivacyPolicy: React.FC<Props> = () => {
   return (
-    <Layout headTitle='Privacy policy'>
+    <Layout headTitle='Zeeshan Portfolio | Privacy policy'>
       <article className='prose prose-lg container prose-purple pt-16 section-margin-top'>
         <header className='text-center mb-20 md:mb-32'>
           <H1>Privacy Policy</H1>
