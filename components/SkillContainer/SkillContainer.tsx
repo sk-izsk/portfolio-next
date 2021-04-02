@@ -18,7 +18,7 @@ const SkillContainer: React.FC<Props> = ({ title, skills }) => {
             key={index}
             completed={skill.progress}
             baseBgColor='#ffffff'
-            bgcolor={skill.backgroundColor}
+            bgColor={skill.backgroundColor}
           />
         </div>
       ))}
