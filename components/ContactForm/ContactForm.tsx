@@ -44,7 +44,7 @@ const ContactForm: React.FC<Props> = () => {
     <div className='text-center flex-1 m-2 rounded-md border-2 p-4 shadow-inner dark:shadow-none dark:border-purple-600'>
       <form
         id='contact-me'
-        className='w-full flex-1 flex flex-col items-center mx-auto max-w-3xl shadow p-8 text-gray-700 '
+        className='w-full flex-1 flex flex-col items-center mx-auto max-w-3xl p-8 text-gray-700 '
         onSubmit={onSubmit}
       >
         <H2>Contact form</H2>
