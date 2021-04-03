@@ -1,34 +1,138 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/sk-izsk/portfolio-next">
+    <img src="README/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">NEXT Portfolio</h3>
+
+  <p align="center">
+    Built in NEXT with love and passion
+    <br />
+    <a href="https://izsk.vercel.app"><strong>Explore the website »</strong></a>
+    <br />
+    <br />
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Database](#database)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contact](#contact)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://izsk.vercel.app)
+
+I love coding specially on javascript/typescript. This is my small effort to show my skill and knowledge so far. As headline suggest I create this Next portfolio just out of my passion and 💕 React.
+
+### Built With
+
+#### Frontend
+
+The Frontend of this portfolio build mainly on NEXT along with some other important technologies followed
+
+- [React](https://reactjs.org)
+- [React-Hooks](https://reactjs.org)
+- [NEXT-Js](https://nextjs.org)
+- [Tailwind-CSS](https://tailwindcss.com)
+- [Axios](https://github.com/axios/axios)
+- [Typescript](https://www.typescriptlang.org)
+- [Yup](https://github.com/jquense/yup)
+- [Vercel(deploy)](https://vercel.com/)
+- [Yarn](https://classic.yarnpkg.com/lang/en/)
+- [Prettier](https://prettier.io)
+- [Husky](https://github.com/typicode/husky)
+
+#### Backend
+
+The Backend of this portfolio build mainly on NodeJS along with some other important technologies followed
+
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com)
+- [Axios](https://github.com/axios/axios)
+- [Typescript](https://www.typescriptlang.org)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Yup](https://github.com/jquense/yup)
+- [NodeMailer](https://nodemailer.com/about/)
+- [Mailgun](https://www.mailgun.com)
+- [Yarn](https://classic.yarnpkg.com/lang/en/)
+- [Prettier](https://prettier.io)
+- [Husky](https://github.com/typicode/husky)
+- [Heroku(deploy)](https://www.heroku.com)
+
+#### Database
+
+- [MongoDB](https://www.mongodb.com)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+This is just simple guide incase if you wish to run this locally
 
-```bash
-npm run dev
-# or
-yarn dev
+### Prerequisites
+
+You can either go with Yarn (version-1) or NPM. I personally like Yarn so I describe accordingly. Kindly follow the corresponding npm command incase if you use npm
+
+- Yarn / npm
+
+```sh
+npm install yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```sh
+git clone https://github.com/sk-izsk/portfolio-next.git
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Install NPM packages
 
-## Learn More
+```sh
+yarn
+```
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+````
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. For prettier
 
-## Deploy on Vercel
+```sh
+yarn prettier:fix
+````
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- CONTACT -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Shaikh Zeeshan Murshed - [@Sk_iZsk](https://twitter.com/Sk_iZsk) - sk.zeeshan1992@gmail.com
+
+Project Link: [https://github.com/sk-izsk/portfolio-next](https://github.com/sk-izsk/portfolio-next)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/skizsk/
+[product-screenshot]: README/izsk-NEXT.gif
